@@ -1,0 +1,195 @@
+/* Default */
+.box {
+  border: 1px solid black;
+}
+body {
+  background-color: aqua;
+  text-align: center;
+}
+h1 {
+  text-align: center;
+  width: 100%;
+}
+.section1 {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.image {
+  width: 10vw;
+  height: 10vw;
+  min-width: 100px;
+  min-height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.section1 div {
+  width: 30%;
+  display: flex;
+}
+.section1 p {
+  width: 50%;
+}
+#pic1 {
+  background-image: url('sleepy.png');
+}
+#pic2 {
+  background-image: url('criminal2.png');
+  transform: scaleX(-1);
+}
+#pic3 {
+  background-image: url('sleepy.png');
+}
+#hide {
+  display: none;
+}
+.text4 {
+  display: inline;
+}
+.text2,
+.text3,
+.text1 {
+  display: none;
+}
+
+/* Large */
+@media screen and (max-width: 1180px) {
+  body {
+    color: purple;
+    background-color: yellow;
+  }
+  .section1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .image {
+    min-width: 100px;
+    min-height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .section1 div {
+    width: 30%;
+    display: flex;
+  }
+  .section1 p {
+    width: 100%;
+  }
+  #pic1 {
+    background-image: url('knight3.png');
+    transform: scaleX(-1);
+  }
+  #pic2 {
+    background-image: url('criminal.png');
+    transform: scaleX(1);
+  }
+  #pic3 {
+    background-image: url('cat.png');
+    transform: scaleX(-1);
+  }
+  #hide {
+    display: flex;
+  }
+  .text3 {
+    display: inline;
+  }
+  .text2,
+  .text1,
+  .text4 {
+    display: none;
+  }
+}
+/* Medium */
+@media screen and (max-width: 880px) {
+  body {
+    color: blue;
+    background-color: orange;
+  }
+  .section1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .image {
+    min-width: 30vw;
+    min-height: 30vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .section1 div {
+    width: 30vw;
+    display: block;
+  }
+  .section1 p {
+    width: 100%;
+  }
+  #pic1 {
+    background-image: url('dragon2.png');
+    transform: scaleX(1);
+  }
+  #pic2 {
+    background-image: url('knight2.png');
+    transform: scaleX(-1);
+  }
+  #pic3 {
+    background-image: url('general.png');
+    transform: scaleX(1);
+  }
+  #hide {
+    display: block;
+  }
+  .text2 {
+    display: inline;
+  }
+  .text1,
+  .text3,
+  .text4 {
+    display: none;
+  }
+}
+/* Small */
+@media screen and (max-width: 580px) {
+  body {
+    color: white;
+    background-color: red;
+  }
+  .section1 {
+    width: 90vw;
+    display: block;
+    flex-wrap: none;
+    padding: 10px 0 10px 0;
+  }
+  .image {
+    width: 90vw;
+    height: 90vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .section1 div {
+    width: 100%;
+    display: block;
+  }
+  .section1 p {
+    width: 100%;
+  }
+  #pic1 {
+    background-image: url('dragon.png');
+  }
+  #pic2 {
+    background-image: url('knight.png');
+    transform: scaleX(1);
+  }
+  #pic3 {
+    background-image: url('fox.png');
+    transform: scaleX(-1);
+  }
+  .text1 {
+    display: inline;
+  }
+  .text2,
+  .text3,
+  .text4 {
+    display: none;
+  }
+}
